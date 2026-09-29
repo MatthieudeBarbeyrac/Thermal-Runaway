@@ -10,7 +10,7 @@ A CC‑CV charger/discharger cycles the cell while keeping the state of charge (
 The BEC cell is intended to represent normal operation only up to moderate temperatures.
 
 The model with this current battery becomes invalid after the cell temperature reaches 90 °C, because in a real cell a short circuit and thermal‑runaway reaction would be expected to occur at that point.
-Beyond 90 °C, the simple equivalent‑circuit representation no longer captures the physics (internal short, rapid exothermic reactions, gas generation, etc.).
+Beyond 90 °C, the simple equivalent‑circuit representation no longer captures the physics (internal short, rapid exothermic reactions, etc.).
 Any results for the BEC cell above 90 °C should not be interpreted as realistic.
 
 You should replace this battery with your own model or data if you have it
@@ -30,4 +30,18 @@ Configured the CC‑CV block so that discharging current is applied only while:
 SOC>0.3.
 
 This keeps the cell cycling within a realistic SOC window and avoids extreme low/high SOC conditions that would require additional modelling fidelity.
+
+To run:
+
+Put the three files in the same MATLAB folder (two .slx files, one .m file.)
+
+Run the Battery CCCV and MTR files before running the MTRNI file.
+
+Open the simulation.
+
+To access the BEC from the simulation:
+
+Click on the Controls subsystem.
+
+Then click on the Battery subsystem.
 
