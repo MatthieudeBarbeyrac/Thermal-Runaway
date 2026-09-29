@@ -31,7 +31,9 @@ SOC>0.3.
 
 This keeps the cell cycling within a realistic SOC window and avoids extreme low/high SOC conditions that would require additional modelling fidelity.
 
+
 **TO RUN**:
+
 
 Put the three files in the same MATLAB folder (two .slx files, one .m file.)
 
